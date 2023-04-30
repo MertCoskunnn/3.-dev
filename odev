@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Örnek Site</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="ust_resim.jpg" alt="Site Üst Resmi">
+		<button>Bir Buton</button>
+	</header>
+	<main>
+		<img src="orta_resim.jpg" alt="Site Orta Resmi">
+	</main>
+	<footer>
+		<img src="alt_resim1.jpg" alt="Site Alt Resmi 1">
+		<img src="alt_resim2.jpg" alt="Site Alt Resmi 2">
+		<img src="alt_resim3.jpg" alt="Site Alt Resmi 3">
+	</footer>
+</body>
+</html>
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header img {
+	width: 100%;
+	height: auto;
+}
+
+header button {
+	background-color: blue;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+main img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	height: auto;
+}
+
+footer img {
+	width: 33.33%;
+	height: auto;
+	display: inline-block;
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ana Sayfa</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="ust_resim.jpg" alt="Site Üst Resmi">
+		<button onclick="location.href='harita.html'">Haritayı Görüntüle</button>
+	</header>
+	<main>
+		<p>Burada siyah arka plan üzerine yazılan yazılar olacak.</p>
+	</main>
+	<footer>
+		<p>Burada turuncu arka plan üzerine yazılan yazılar olacak.</p>
+	</footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ana Sayfa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<img src="ust_resim.jpg" alt="Site Üst Resmi">
+		<button onclick="location.href='harita.html'">Haritayı Görüntüle</button>
+	</header>
+	<main>
+		<p>Burada siyah arka plan üzerine yazılan yazılar olacak.</p>
+	</main>
+	<footer>
+		<p>Burada turuncu arka plan üzerine yazılan yazılar olacak.</p>
+	</footer>
+</body>
+</html>
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+header img {
+	width: 100%;
+	height: auto;
+}
+
+header button {
+	background-color: blue;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+main {
+	background-color: black;
+	color: white;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	background-color: orange;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Mobil Görünüm */
+@media screen and (max-width: 480px) {
+	header button {
+		font-size: 16px;
+	}
+	main {
+		height: 200px;
+	}
+	footer {
+		padding: 5px;
+	}
+}
+
+/* Tablet Görünüm */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	header button {
+		font-size: 18px;
+	}
+	main {
+		height: 250px;
+	}
+	footer {
+		padding: 10px;
+	}
+}
+
+/* Masaüstü Görünüm */
+@media screen and (min-width: 769px) {
+	header button {
+		font-size: 20px;
+	}
+	main {
+		height: 300px;
+	}
+	footer {
+		padding: 20px;
+	}
+}
+
